@@ -25,9 +25,9 @@ $destructive_color: #F04A50;
 
 $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), transparentize($fg_color, 0.55));
 
-$tooltip_bg_color: #fbeaa0;
-$tooltip_fg_color: #4a4a4a;
-$tooltip_border_color: #d0d0d0;
+$tooltip_bg_color: if($variant == 'light', #fbeaa0, #282828);
+$tooltip_fg_color: if($variant == 'light', #4a4a4a, #ffffff);
+$tooltip_border_color: if($variant == 'light', #d0d0d0, #242424);
 
 $osd_fg_color: #c3c3c3;
 $osd_bg_color: #353535;
