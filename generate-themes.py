@@ -163,3 +163,6 @@ for color in y_hex_colors1.keys():
 
 # Files
 os.system("cp -R files/* ./")
+
+# Make sure theme names follow standards so some apps use dark mode properly
+os.system("cd usr/share/themes && for i in *Dark*; do mv $i $i-dark; done;")
